@@ -34,12 +34,13 @@ class ViewController: UIViewController {
             "insuranceDetail": [
                 "insuranceStatus": "\(["active", "not active", "pending"].randomElement()!)",
                 "providerId": "\(Int.random(in: 1000..<2000))",
-                "providerType": "\(["Regular", "VIP", "VVIP"].randomElement()!)",
+                "productType": "\(["Regular", "VIP", "VVIP"].randomElement()!)",
                 "insurancedPerson": [
                     [
                         "emailAddress": "\(["x@gmail", "x@tvlk", "x@facebook"].randomElement()!)",
                         "nationality": "\(["ID", "TH", "MY"].randomElement()!)",
                         "firstName": "\(["John", "Doe", "John Doe"].randomElement()!)",
+                        "lastName": "\(["John", "Doe", "John Doe"].randomElement()!)",
                         "documentType": "\(["none", "docs", "prescription"].randomElement()!)"
                     ]
                 ]
@@ -49,6 +50,13 @@ class ViewController: UIViewController {
         CoreDataManager.instance.perform { transaction in
             try transaction.importUniqueObject(Into<FlightBookingInfo>(), source: jsonData)
         } success: { flightBookingInfo in
+            let alert = UIAlertController(
+                title: "Add Data",
+                message: "Add object with invoice id \(flightBookingInfo?.invoiceId ?? "") succesfully",
+                preferredStyle: UIAlertController.Style.alert
+            )
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel))
+            self.present(alert, animated: true, completion: nil)
             print(flightBookingInfo?.invoiceId ?? "")
         } failure: { error in
             print(error.localizedDescription)
@@ -102,7 +110,7 @@ class ViewController: UIViewController {
                 } success: { object in
                     let alert = UIAlertController(
                         title: "Delete data",
-                        message: "Delete object with id \(invoiceId)",
+                        message: "Delete object with id \(invoiceId) succesfully",
                         preferredStyle: UIAlertController.Style.alert
                     )
                     alert.addAction(UIAlertAction(title: "OK", style: .cancel))

@@ -9,22 +9,22 @@ import Foundation
 import CoreData
 import CoreStore
 
-class FlightBookingDetail: NSManagedObject, ImportableObject {
+public class FlightBookingDetail: NSManagedObject, ImportableObject {
     
-    typealias ImportSource = [String: Any]
+    public typealias ImportSource = [String: Any]
     
     @NSManaged
-    var multipleAirlines: Bool
+    public var multipleAirlines: Bool
     @NSManaged
-    var originDate: Date?
+    public var originDate: Date?
     @NSManaged
-    var twoWay: Bool
+    public var twoWay: Bool
     
     // Relationship
     @NSManaged
-    var flightBookingInfo: FlightBookingInfo?
+    public var flightBookingInfo: FlightBookingInfo?
     
-    func didInsert(from source: [String : Any], in transaction: CoreStore.BaseDataTransaction) throws {
+    public func didInsert(from source: [String : Any], in transaction: CoreStore.BaseDataTransaction) throws {
         multipleAirlines = source["multipleAirlines"] as? Bool ?? false
         originDate = source["originDate"] as? Date
         twoWay = source["twoWay"] as? Bool ?? false

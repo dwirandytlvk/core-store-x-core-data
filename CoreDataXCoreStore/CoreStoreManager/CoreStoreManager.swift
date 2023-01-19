@@ -37,7 +37,7 @@ class CoreDataManager {
         let currentStack: DataStack = DataStack(
             xcodeModelName: "MyBooking",
             bundle: Bundle.main,
-            migrationChain: ["MyBooking", "MyBookingV2", "MyBookingV3", "MyBookingV4"]
+            migrationChain: ["MyBooking", "MyBookingV2", "MyBookingV3", "MyBookingV4", "MyBookingV5"]
         )
         
         _ = currentStack.addStorage(
