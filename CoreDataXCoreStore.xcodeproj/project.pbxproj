@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2805997965168B215E1FC44F /* Pods_CoreDataXCoreStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8ECFCA60503B47D45CF4EA /* Pods_CoreDataXCoreStore.framework */; };
 		4837761D29753FA80019C090 /* MyBooking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4837761B29753FA80019C090 /* MyBooking.xcdatamodeld */; };
 		4837761F2975410A0019C090 /* FlightBookingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4837761E2975410A0019C090 /* FlightBookingInfo.swift */; };
 		48377621297546700019C090 /* FlightBookingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48377620297546700019C090 /* FlightBookingDetail.swift */; };
@@ -14,23 +15,23 @@
 		48ECFAE42977D23C00075EAB /* NSDictionary+SafeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 48ECFAE32977D23C00075EAB /* NSDictionary+SafeObject.m */; };
 		48F4927329767D5B00B9E486 /* InsuranceDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F4927229767D5B00B9E486 /* InsuranceDetail.m */; };
 		48F492762976805800B9E486 /* InsurancedPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F492752976805800B9E486 /* InsurancedPerson.m */; };
+		48F67EA62979425E0014F01A /* SchemaMappingV4ToV5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F67EA52979425E0014F01A /* SchemaMappingV4ToV5.swift */; };
 		48FFBC0629753E9B00936A95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFBC0529753E9B00936A95 /* AppDelegate.swift */; };
 		48FFBC0829753E9B00936A95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFBC0729753E9B00936A95 /* SceneDelegate.swift */; };
 		48FFBC0A29753E9B00936A95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFBC0929753E9B00936A95 /* ViewController.swift */; };
 		48FFBC0D29753E9B00936A95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FFBC0B29753E9B00936A95 /* Main.storyboard */; };
 		48FFBC0F29753E9C00936A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FFBC0E29753E9C00936A95 /* Assets.xcassets */; };
 		48FFBC1229753E9C00936A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FFBC1029753E9C00936A95 /* LaunchScreen.storyboard */; };
-		FFCC20633AA667FA8AD77D63 /* Pods_CoreDataXCoreStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2C74B2E0D591C9314193D3 /* Pods_CoreDataXCoreStore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F0EE6B985BF2935742AECE3 /* Pods-CoreDataXCoreStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataXCoreStore.debug.xcconfig"; path = "Target Support Files/Pods-CoreDataXCoreStore/Pods-CoreDataXCoreStore.debug.xcconfig"; sourceTree = "<group>"; };
 		4837761C29753FA80019C090 /* MyBooking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBooking.xcdatamodel; sourceTree = "<group>"; };
 		4837761E2975410A0019C090 /* FlightBookingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookingInfo.swift; sourceTree = "<group>"; };
 		48377620297546700019C090 /* FlightBookingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookingDetail.swift; sourceTree = "<group>"; };
 		483776232975479F0019C090 /* CoreStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreStoreManager.swift; sourceTree = "<group>"; };
 		4837762529754C1C0019C090 /* MyBookingV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBookingV2.xcdatamodel; sourceTree = "<group>"; };
 		4837762629755F160019C090 /* MyBookingV3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBookingV3.xcdatamodel; sourceTree = "<group>"; };
+		48576270297920710061157D /* MyBookingV5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBookingV5.xcdatamodel; sourceTree = "<group>"; };
 		48ECFAE22977D23C00075EAB /* NSDictionary+SafeObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeObject.h"; sourceTree = "<group>"; };
 		48ECFAE32977D23C00075EAB /* NSDictionary+SafeObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeObject.m"; sourceTree = "<group>"; };
 		48F4927029767D5A00B9E486 /* CoreDataXCoreStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataXCoreStore-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -39,6 +40,7 @@
 		48F492742976805800B9E486 /* InsurancedPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsurancedPerson.h; sourceTree = "<group>"; };
 		48F492752976805800B9E486 /* InsurancedPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsurancedPerson.m; sourceTree = "<group>"; };
 		48F4927729769D7D00B9E486 /* MyBookingV4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBookingV4.xcdatamodel; sourceTree = "<group>"; };
+		48F67EA52979425E0014F01A /* SchemaMappingV4ToV5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaMappingV4ToV5.swift; sourceTree = "<group>"; };
 		48FFBC0229753E9B00936A95 /* CoreDataXCoreStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataXCoreStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FFBC0529753E9B00936A95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48FFBC0729753E9B00936A95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,8 +49,9 @@
 		48FFBC0E29753E9C00936A95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48FFBC1129753E9C00936A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48FFBC1329753E9C00936A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9197AD6C84C5327C7D026C1 /* Pods-CoreDataXCoreStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataXCoreStore.release.xcconfig"; path = "Target Support Files/Pods-CoreDataXCoreStore/Pods-CoreDataXCoreStore.release.xcconfig"; sourceTree = "<group>"; };
-		FA2C74B2E0D591C9314193D3 /* Pods_CoreDataXCoreStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataXCoreStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A8ECFCA60503B47D45CF4EA /* Pods_CoreDataXCoreStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataXCoreStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A27FA593CBE2042286C8B821 /* Pods-CoreDataXCoreStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataXCoreStore.debug.xcconfig"; path = "Target Support Files/Pods-CoreDataXCoreStore/Pods-CoreDataXCoreStore.debug.xcconfig"; sourceTree = "<group>"; };
+		CDE7971C07B0EE45340766ED /* Pods-CoreDataXCoreStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataXCoreStore.release.xcconfig"; path = "Target Support Files/Pods-CoreDataXCoreStore/Pods-CoreDataXCoreStore.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFCC20633AA667FA8AD77D63 /* Pods_CoreDataXCoreStore.framework in Frameworks */,
+				2805997965168B215E1FC44F /* Pods_CoreDataXCoreStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +69,7 @@
 		4837761A29753F830019C090 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				487BCC5F29792A7D0065E467 /* MappingModel */,
 				4837761B29753FA80019C090 /* MyBooking.xcdatamodeld */,
 				4837761E2975410A0019C090 /* FlightBookingInfo.swift */,
 				48377620297546700019C090 /* FlightBookingDetail.swift */,
@@ -86,6 +90,14 @@
 			path = CoreStoreManager;
 			sourceTree = "<group>";
 		};
+		487BCC5F29792A7D0065E467 /* MappingModel */ = {
+			isa = PBXGroup;
+			children = (
+				48F67EA52979425E0014F01A /* SchemaMappingV4ToV5.swift */,
+			);
+			path = MappingModel;
+			sourceTree = "<group>";
+		};
 		48ECFAE12977D21C00075EAB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +113,7 @@
 				48FFBC0429753E9B00936A95 /* CoreDataXCoreStore */,
 				48FFBC0329753E9B00936A95 /* Products */,
 				9129938A7993A8D15379EC41 /* Pods */,
-				D61B6240968B43623DA5B8D6 /* Frameworks */,
+				FE3EAC9EF180372EF1091A99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,16 +145,16 @@
 		9129938A7993A8D15379EC41 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3F0EE6B985BF2935742AECE3 /* Pods-CoreDataXCoreStore.debug.xcconfig */,
-				A9197AD6C84C5327C7D026C1 /* Pods-CoreDataXCoreStore.release.xcconfig */,
+				A27FA593CBE2042286C8B821 /* Pods-CoreDataXCoreStore.debug.xcconfig */,
+				CDE7971C07B0EE45340766ED /* Pods-CoreDataXCoreStore.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		D61B6240968B43623DA5B8D6 /* Frameworks */ = {
+		FE3EAC9EF180372EF1091A99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA2C74B2E0D591C9314193D3 /* Pods_CoreDataXCoreStore.framework */,
+				7A8ECFCA60503B47D45CF4EA /* Pods_CoreDataXCoreStore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,11 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48FFBC1629753E9C00936A95 /* Build configuration list for PBXNativeTarget "CoreDataXCoreStore" */;
 			buildPhases = (
-				1E60BCFB2B2C5CD3451409A2 /* [CP] Check Pods Manifest.lock */,
+				68AE767C53113A28681F5F6D /* [CP] Check Pods Manifest.lock */,
 				48FFBBFE29753E9B00936A95 /* Sources */,
 				48FFBBFF29753E9B00936A95 /* Frameworks */,
 				48FFBC0029753E9B00936A95 /* Resources */,
-				96F3A50980E2480086BA9F94 /* [CP] Embed Pods Frameworks */,
+				DF703E089B052C453D2B8CAA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,7 +229,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E60BCFB2B2C5CD3451409A2 /* [CP] Check Pods Manifest.lock */ = {
+		68AE767C53113A28681F5F6D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,7 +251,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		96F3A50980E2480086BA9F94 /* [CP] Embed Pods Frameworks */ = {
+		DF703E089B052C453D2B8CAA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,6 +280,7 @@
 				4837761F2975410A0019C090 /* FlightBookingInfo.swift in Sources */,
 				48FFBC0A29753E9B00936A95 /* ViewController.swift in Sources */,
 				48F492762976805800B9E486 /* InsurancedPerson.m in Sources */,
+				48F67EA62979425E0014F01A /* SchemaMappingV4ToV5.swift in Sources */,
 				4837761D29753FA80019C090 /* MyBooking.xcdatamodeld in Sources */,
 				48FFBC0629753E9B00936A95 /* AppDelegate.swift in Sources */,
 				48FFBC0829753E9B00936A95 /* SceneDelegate.swift in Sources */,
@@ -416,7 +429,7 @@
 		};
 		48FFBC1729753E9C00936A95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F0EE6B985BF2935742AECE3 /* Pods-CoreDataXCoreStore.debug.xcconfig */;
+			baseConfigurationReference = A27FA593CBE2042286C8B821 /* Pods-CoreDataXCoreStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,7 +460,7 @@
 		};
 		48FFBC1829753E9C00936A95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9197AD6C84C5327C7D026C1 /* Pods-CoreDataXCoreStore.release.xcconfig */;
+			baseConfigurationReference = CDE7971C07B0EE45340766ED /* Pods-CoreDataXCoreStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -502,12 +515,13 @@
 		4837761B29753FA80019C090 /* MyBooking.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				48576270297920710061157D /* MyBookingV5.xcdatamodel */,
 				48F4927729769D7D00B9E486 /* MyBookingV4.xcdatamodel */,
 				4837762629755F160019C090 /* MyBookingV3.xcdatamodel */,
 				4837762529754C1C0019C090 /* MyBookingV2.xcdatamodel */,
 				4837761C29753FA80019C090 /* MyBooking.xcdatamodel */,
 			);
-			currentVersion = 48F4927729769D7D00B9E486 /* MyBookingV4.xcdatamodel */;
+			currentVersion = 48576270297920710061157D /* MyBookingV5.xcdatamodel */;
 			path = MyBooking.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

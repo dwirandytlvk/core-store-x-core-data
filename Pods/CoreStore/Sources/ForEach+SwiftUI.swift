@@ -33,18 +33,18 @@
 //
 //@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 //extension ForEach where Content: View {
-//    
+//
 //    // MARK: Public
-//    
+//
 //    /**
 //     Creates an instance that creates views for each object in a collection of `ObjectSnapshot`s. The objects' `NSManagedObjectID` are used as the identifier
 //     ```
 //     let people: [ObjectSnapshot<Person>]
-//     
+//
 //     var body: some View {
-//     
+//
 //        List {
-//            
+//
 //            ForEach(self.people) { person in
 //
 //                ProfileView(person)
@@ -53,7 +53,7 @@
 //        .animation(.default)
 //     }
 //     ```
-//     
+//
 //     - parameter objectSnapshots: The collection of `ObjectSnapshot`s that the `ForEach` instance uses to create views dynamically
 //     - parameter content: The view builder that receives an `ObjectPublisher` instance and creates views dynamically.
 //     */
@@ -61,7 +61,7 @@
 //        _ objectSnapshots: Data,
 //        @ViewBuilder content: @escaping (ObjectSnapshot<O>) -> Content
 //    ) where Data.Element == ObjectSnapshot<O>, ID == O.ObjectID {
-//        
+//
 //        self.init(objectSnapshots, id: \.cs_objectID, content: content)
 //    }
 //
@@ -70,11 +70,11 @@
 //     ```
 //     @ListState
 //     var people: ListSnapshot<Person>
-//     
+//
 //     var body: some View {
-//     
+//
 //        List {
-//            
+//
 //             ForEach(objectIn: self.people) { person in
 //
 //                 ProfileView(person)
@@ -83,7 +83,7 @@
 //        .animation(.default)
 //     }
 //     ```
-//     
+//
 //     - parameter listSnapshot: The `ListSnapshot` that the `ForEach` instance uses to create views dynamically
 //     - parameter content: The view builder that receives an `ObjectPublisher` instance and creates views dynamically.
 //     */
@@ -91,19 +91,19 @@
 //        objectIn listSnapshot: Data,
 //        @ViewBuilder content: @escaping (ObjectPublisher<O>) -> Content
 //    ) where Data == ListSnapshot<O>, ID == O.ObjectID {
-//        
+//
 //        self.init(listSnapshot, id: \.cs_objectID, content: content)
 //    }
-//    
+//
 //    /**
 //     Creates an instance that creates views for each object in a collection of `ObjectPublisher`s.
 //     ```
 //     let people: [ObjectPublisher<Person>]
-//     
+//
 //     var body: some View {
-//     
+//
 //        List {
-//            
+//
 //            ForEach(objectIn: self.people) { person in
 //
 //                ProfileView(person)
@@ -112,7 +112,7 @@
 //        .animation(.default)
 //     }
 //     ```
-//     
+//
 //     - parameter objectPublishers: The collection of `ObjectPublisher`s that the `ForEach` instance uses to create views dynamically
 //     - parameter content: The view builder that receives an `ObjectPublisher` instance and creates views dynamically.
 //     */
@@ -120,22 +120,22 @@
 //        objectIn objectPublishers: Data,
 //        @ViewBuilder content: @escaping (ObjectPublisher<O>) -> Content
 //    ) where Data.Element == ObjectPublisher<O>, ID == O.ObjectID {
-//        
+//
 //        self.init(objectPublishers, id: \.cs_objectID, content: content)
 //    }
-//    
+//
 //    /**
 //     Creates an instance that creates views for `ListSnapshot` sections.
 //     ```
 //     @ListState
 //     var people: ListSnapshot<Person>
-//     
+//
 //     var body: some View {
-//     
+//
 //        List {
-//            
+//
 //            ForEach(sectionIn: self.people) { section in
-//                
+//
 //                Section(header: Text(section.sectionID)) {
 //
 //                    ForEach(objectIn: section) { person in
@@ -148,7 +148,7 @@
 //        .animation(.default)
 //     }
 //     ```
-//     
+//
 //     - parameter listSnapshot: The `ListSnapshot` that the `ForEach` instance uses to create views dynamically
 //     - parameter content: The view builder that receives a `ListSnapshot.SectionInfo` instance and creates views dynamically.
 //     */
@@ -156,23 +156,23 @@
 //        sectionIn listSnapshot: ListSnapshot<O>,
 //        @ViewBuilder content: @escaping (ListSnapshot<O>.SectionInfo) -> Content
 //    ) where Data == [ListSnapshot<O>.SectionInfo], ID == ListSnapshot<O>.SectionID {
-//        
+//
 //        let sections = listSnapshot.sections()
 //        self.init(sections, id: \.sectionID, content: content)
 //    }
-//    
+//
 //    /**
 //     Creates an instance that creates views for each object in a `ListSnapshot.SectionInfo`.
 //     ```
 //     @ListState
 //     var people: ListSnapshot<Person>
-//     
+//
 //     var body: some View {
-//     
+//
 //        List {
-//            
+//
 //            ForEach(sectionIn: self.people) { section in
-//                
+//
 //                Section(header: Text(section.sectionID)) {
 //
 //                    ForEach(objectIn: section) { person in
@@ -185,7 +185,7 @@
 //        .animation(.default)
 //     }
 //     ```
-//     
+//
 //     - parameter sectionInfo: The `ListSnapshot.SectionInfo` that the `ForEach` instance uses to create views dynamically
 //     - parameter content: The view builder that receives an `ObjectPublisher` instance and creates views dynamically.
 //     */
@@ -193,7 +193,7 @@
 //        objectIn sectionInfo: Data,
 //        @ViewBuilder content: @escaping (ObjectPublisher<O>) -> Content
 //    ) where Data == ListSnapshot<O>.SectionInfo, ID == O.ObjectID {
-//        
+//
 //        self.init(sectionInfo, id: \.cs_objectID, content: content)
 //    }
 //}

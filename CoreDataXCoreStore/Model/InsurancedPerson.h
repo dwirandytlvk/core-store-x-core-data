@@ -17,8 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString *emailAddress;
 @property (nonatomic, strong) NSString *nationality;
-@property (nonatomic, strong) NSString *firstName;
-@property (nonatomic, strong) NSString *lastName;
+//@property (nonatomic, strong) NSString *firstName;
+//@property (nonatomic, strong) NSString *lastName;
+@property (nonatomic, strong) NSString *fullName;
 @property (nonatomic, strong) NSString *documentType;
 
 // Relationship

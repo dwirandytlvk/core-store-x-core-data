@@ -7,17 +7,17 @@
 
 #import <CoreData/CoreData.h>
 
-#if __has_include("CoreDataXCoreStore-Swift.h")
-#import "CoreDataXCoreStore-Swift.h"
-#else
-#import <CoreDataXCoreStore/CoreDataXCoreStore-Swift.h>
-#endif
+//#if __has_include("CoreDataXCoreStore-Swift.h")
+//#import "CoreDataXCoreStore-Swift.h"
+//#else
+//#import <CoreDataXCoreStore/CoreDataXCoreStore-Swift.h>
+//#endif
 
-#import "NSDictionary+SafeObject.h"
 #import "InsurancedPerson.h"
 
 @import CoreStore;
 
+@class FlightBookingInfo;
 
 NS_ASSUME_NONNULL_BEGIN
 

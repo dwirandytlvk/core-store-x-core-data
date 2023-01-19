@@ -9,7 +9,9 @@
 
 static NSString *const kEmailAddress = @"emailAddress";
 static NSString *const kNationality = @"nationality";
-static NSString *const kFirstName = @"firstName";
+//static NSString *const kFirstName = @"firstName";
+//static NSString *const kLastName = @"lastName";
+static NSString *const kFullName = @"fullName";
 static NSString *const kDocumentType = @"documentType";
 
 @implementation InsurancedPerson
@@ -20,7 +22,9 @@ static NSString *const kDocumentType = @"documentType";
     if (self && [dict isKindOfClass:[NSDictionary class]]) {
         self.emailAddress = [dict safeObjectForKey:kEmailAddress];
         self.nationality = [dict safeObjectForKey:kNationality];
-        self.firstName = [dict safeObjectForKey:kFirstName];
+//        self.firstName = [dict safeObjectForKey:kFirstName];
+//        self.lastName = [dict safeObjectForKey:kLastName];
+        self.fullName = [dict safeObjectForKey:kFullName];
         self.documentType = [dict safeObjectForKey:kDocumentType];
     }
     
