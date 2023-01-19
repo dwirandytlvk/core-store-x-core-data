@@ -12,11 +12,10 @@
 		4837761F2975410A0019C090 /* FlightBookingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4837761E2975410A0019C090 /* FlightBookingInfo.swift */; };
 		48377621297546700019C090 /* FlightBookingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48377620297546700019C090 /* FlightBookingDetail.swift */; };
 		483776242975479F0019C090 /* CoreStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483776232975479F0019C090 /* CoreStoreManager.swift */; };
-		487BCC6129792ACC0065E467 /* MyBookingV4ToV5Mapping.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 487BCC6029792ACC0065E467 /* MyBookingV4ToV5Mapping.xcmappingmodel */; };
-		487BCC6329792B580065E467 /* InsurancedPersonV5MigrationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487BCC6229792B580065E467 /* InsurancedPersonV5MigrationPolicy.swift */; };
 		48ECFAE42977D23C00075EAB /* NSDictionary+SafeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 48ECFAE32977D23C00075EAB /* NSDictionary+SafeObject.m */; };
 		48F4927329767D5B00B9E486 /* InsuranceDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F4927229767D5B00B9E486 /* InsuranceDetail.m */; };
 		48F492762976805800B9E486 /* InsurancedPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F492752976805800B9E486 /* InsurancedPerson.m */; };
+		48F67EA62979425E0014F01A /* SchemaMappingV4ToV5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F67EA52979425E0014F01A /* SchemaMappingV4ToV5.swift */; };
 		48FFBC0629753E9B00936A95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFBC0529753E9B00936A95 /* AppDelegate.swift */; };
 		48FFBC0829753E9B00936A95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFBC0729753E9B00936A95 /* SceneDelegate.swift */; };
 		48FFBC0A29753E9B00936A95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFBC0929753E9B00936A95 /* ViewController.swift */; };
@@ -33,8 +32,6 @@
 		4837762529754C1C0019C090 /* MyBookingV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBookingV2.xcdatamodel; sourceTree = "<group>"; };
 		4837762629755F160019C090 /* MyBookingV3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBookingV3.xcdatamodel; sourceTree = "<group>"; };
 		48576270297920710061157D /* MyBookingV5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBookingV5.xcdatamodel; sourceTree = "<group>"; };
-		487BCC6029792ACC0065E467 /* MyBookingV4ToV5Mapping.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = MyBookingV4ToV5Mapping.xcmappingmodel; sourceTree = "<group>"; };
-		487BCC6229792B580065E467 /* InsurancedPersonV5MigrationPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsurancedPersonV5MigrationPolicy.swift; sourceTree = "<group>"; };
 		48ECFAE22977D23C00075EAB /* NSDictionary+SafeObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeObject.h"; sourceTree = "<group>"; };
 		48ECFAE32977D23C00075EAB /* NSDictionary+SafeObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeObject.m"; sourceTree = "<group>"; };
 		48F4927029767D5A00B9E486 /* CoreDataXCoreStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataXCoreStore-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -43,6 +40,7 @@
 		48F492742976805800B9E486 /* InsurancedPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsurancedPerson.h; sourceTree = "<group>"; };
 		48F492752976805800B9E486 /* InsurancedPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsurancedPerson.m; sourceTree = "<group>"; };
 		48F4927729769D7D00B9E486 /* MyBookingV4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBookingV4.xcdatamodel; sourceTree = "<group>"; };
+		48F67EA52979425E0014F01A /* SchemaMappingV4ToV5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaMappingV4ToV5.swift; sourceTree = "<group>"; };
 		48FFBC0229753E9B00936A95 /* CoreDataXCoreStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataXCoreStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FFBC0529753E9B00936A95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48FFBC0729753E9B00936A95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,8 +93,7 @@
 		487BCC5F29792A7D0065E467 /* MappingModel */ = {
 			isa = PBXGroup;
 			children = (
-				487BCC6029792ACC0065E467 /* MyBookingV4ToV5Mapping.xcmappingmodel */,
-				487BCC6229792B580065E467 /* InsurancedPersonV5MigrationPolicy.swift */,
+				48F67EA52979425E0014F01A /* SchemaMappingV4ToV5.swift */,
 			);
 			path = MappingModel;
 			sourceTree = "<group>";
@@ -283,9 +280,8 @@
 				4837761F2975410A0019C090 /* FlightBookingInfo.swift in Sources */,
 				48FFBC0A29753E9B00936A95 /* ViewController.swift in Sources */,
 				48F492762976805800B9E486 /* InsurancedPerson.m in Sources */,
-				487BCC6329792B580065E467 /* InsurancedPersonV5MigrationPolicy.swift in Sources */,
+				48F67EA62979425E0014F01A /* SchemaMappingV4ToV5.swift in Sources */,
 				4837761D29753FA80019C090 /* MyBooking.xcdatamodeld in Sources */,
-				487BCC6129792ACC0065E467 /* MyBookingV4ToV5Mapping.xcmappingmodel in Sources */,
 				48FFBC0629753E9B00936A95 /* AppDelegate.swift in Sources */,
 				48FFBC0829753E9B00936A95 /* SceneDelegate.swift in Sources */,
 				483776242975479F0019C090 /* CoreStoreManager.swift in Sources */,

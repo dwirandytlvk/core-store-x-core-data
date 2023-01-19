@@ -42,7 +42,8 @@ class CoreDataManager {
         
         _ = currentStack.addStorage(
             SQLiteStore(
-                fileName: "MyBooking.sqlite"
+                fileName: "MyBooking.sqlite",
+                migrationMappingProviders: [SchemaMappingV4ToV5.mapping]
             ),
 //            InMemoryStore(),
             completion: { (result) -> Void in
