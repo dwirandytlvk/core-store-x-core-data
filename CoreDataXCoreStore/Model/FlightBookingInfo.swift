@@ -9,38 +9,39 @@ import Foundation
 import CoreData
 import CoreStore
 
-class FlightBookingInfo: NSManagedObject, ImportableUniqueObject {
+@objc
+public class FlightBookingInfo: NSManagedObject, ImportableUniqueObject {
     
-    typealias UniqueIDType = String
+    public typealias UniqueIDType = String
     
-    static var uniqueIDKeyPath: String = String(keyPath: \FlightBookingInfo.invoiceId)
+    public static var uniqueIDKeyPath: String = String(keyPath: \FlightBookingInfo.invoiceId)
     
-    typealias ImportSource = [String: Any]
+    public typealias ImportSource = [String: Any]
     
-    static func uniqueID(from source: [String : Any], in transaction: CoreStore.BaseDataTransaction) throws -> String? {
+    public static func uniqueID(from source: [String : Any], in transaction: CoreStore.BaseDataTransaction) throws -> String? {
         return source["invoiceId"] as? String
     }
     
     @NSManaged
-    var invoiceId: String
+    public var invoiceId: String
     @NSManaged
-    var bookingStatus: String
+    public var bookingStatus: String
     @NSManaged
-    var rescheduleId: String
+    public var rescheduleId: String
     @NSManaged
-    var bookingAmount: Int32
+    public var bookingAmount: Int32
     @NSManaged
-    var rescheduleDetailDisplay: String
+    public var rescheduleDetailDisplay: String
     
     // Relationship
     @NSManaged
-    var flightBookingDetail: FlightBookingDetail?
+    public var flightBookingDetail: FlightBookingDetail?
     
     @NSManaged
     var insuranceDetail: InsuranceDetail?
     
     
-    func update(from source: [String: Any], in transaction: CoreStore.BaseDataTransaction) throws {
+    public func update(from source: [String: Any], in transaction: CoreStore.BaseDataTransaction) throws {
         self.invoiceId = source["invoiceId"] as? String ?? ""
         self.bookingStatus = source["bookingStatus"] as? String ?? ""
         self.rescheduleId = source["rescheduleId"] as? String ?? ""

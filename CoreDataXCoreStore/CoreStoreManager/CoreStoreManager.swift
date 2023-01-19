@@ -37,12 +37,13 @@ class CoreDataManager {
         let currentStack: DataStack = DataStack(
             xcodeModelName: "MyBooking",
             bundle: Bundle.main,
-            migrationChain: ["MyBooking", "MyBookingV2", "MyBookingV3", "MyBookingV4"]
+            migrationChain: ["MyBooking", "MyBookingV2", "MyBookingV3", "MyBookingV4", "MyBookingV5"]
         )
         
         _ = currentStack.addStorage(
             SQLiteStore(
-                fileName: "MyBooking.sqlite"
+                fileName: "MyBooking.sqlite",
+                migrationMappingProviders: [SchemaMappingV4ToV5.mapping]
             ),
 //            InMemoryStore(),
             completion: { (result) -> Void in
