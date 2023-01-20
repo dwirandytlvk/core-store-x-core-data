@@ -30,15 +30,16 @@ public class FlightBookingInfo: NSManagedObject, ImportableUniqueObject {
     public var rescheduleId: String
     @NSManaged
     public var bookingAmount: Int32
-    @NSManaged
-    public var rescheduleDetailDisplay: String
+    
+//    @NSManaged
+//    public var rescheduleDetailDisplay: String
     
     // Relationship
     @NSManaged
     public var flightBookingDetail: FlightBookingDetail?
     
-    @NSManaged
-    var insuranceDetail: InsuranceDetail?
+//    @NSManaged
+//    var insuranceDetail: InsuranceDetail?
     
     
     public func update(from source: [String: Any], in transaction: CoreStore.BaseDataTransaction) throws {
@@ -46,10 +47,10 @@ public class FlightBookingInfo: NSManagedObject, ImportableUniqueObject {
         self.bookingStatus = source["bookingStatus"] as? String ?? ""
         self.rescheduleId = source["rescheduleId"] as? String ?? ""
         self.bookingAmount = source["bookingAmount"] as? Int32 ?? 0
-        self.rescheduleDetailDisplay = source["rescheduleDetailDisplay"] as? String ?? ""
+//        self.rescheduleDetailDisplay = source["rescheduleDetailDisplay"] as? String ?? ""
         self.flightBookingDetail = try transaction.importObject(Into<FlightBookingDetail>(), source: source["flightBookingDetail"] as? [String: Any] ?? [:])
         
-        self.insuranceDetail = InsuranceDetail(dictionary: source["insuranceDetail"] as? [String: Any] ?? [:], context: transaction.unsafeContext())
+//        self.insuranceDetail = InsuranceDetail(dictionary: source["insuranceDetail"] as? [String: Any] ?? [:], context: transaction.unsafeContext())
     }
     
     
