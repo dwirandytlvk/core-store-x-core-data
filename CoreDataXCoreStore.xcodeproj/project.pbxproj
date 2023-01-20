@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2805997965168B215E1FC44F /* Pods_CoreDataXCoreStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8ECFCA60503B47D45CF4EA /* Pods_CoreDataXCoreStore.framework */; };
+		4831082D2979480000075CC2 /* SchemaMigrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831082C2979480000075CC2 /* SchemaMigrationTests.swift */; };
 		4837761D29753FA80019C090 /* MyBooking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4837761B29753FA80019C090 /* MyBooking.xcdatamodeld */; };
 		4837761F2975410A0019C090 /* FlightBookingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4837761E2975410A0019C090 /* FlightBookingInfo.swift */; };
 		48377621297546700019C090 /* FlightBookingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48377620297546700019C090 /* FlightBookingDetail.swift */; };
 		483776242975479F0019C090 /* CoreStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483776232975479F0019C090 /* CoreStoreManager.swift */; };
+		48C13C4F297A373500C040A7 /* MyBooking-V2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 48C13C4E297A373500C040A7 /* MyBooking-V2.sqlite */; };
+		48C13C54297A3DA100C040A7 /* MyBooking-V4.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 48C13C53297A38D200C040A7 /* MyBooking-V4.sqlite */; };
 		48ECFAE42977D23C00075EAB /* NSDictionary+SafeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 48ECFAE32977D23C00075EAB /* NSDictionary+SafeObject.m */; };
 		48F4927329767D5B00B9E486 /* InsuranceDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F4927229767D5B00B9E486 /* InsuranceDetail.m */; };
 		48F492762976805800B9E486 /* InsurancedPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F492752976805800B9E486 /* InsurancedPerson.m */; };
@@ -24,7 +27,19 @@
 		48FFBC1229753E9C00936A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FFBC1029753E9C00936A95 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4831082E2979480000075CC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48FFBBFA29753E9B00936A95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48FFBC0129753E9B00936A95;
+			remoteInfo = CoreDataXCoreStore;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4831082A2979480000075CC2 /* CoreDataXCoreStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataXCoreStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4831082C2979480000075CC2 /* SchemaMigrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaMigrationTests.swift; sourceTree = "<group>"; };
 		4837761C29753FA80019C090 /* MyBooking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBooking.xcdatamodel; sourceTree = "<group>"; };
 		4837761E2975410A0019C090 /* FlightBookingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookingInfo.swift; sourceTree = "<group>"; };
 		48377620297546700019C090 /* FlightBookingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookingDetail.swift; sourceTree = "<group>"; };
@@ -32,6 +47,8 @@
 		4837762529754C1C0019C090 /* MyBookingV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBookingV2.xcdatamodel; sourceTree = "<group>"; };
 		4837762629755F160019C090 /* MyBookingV3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBookingV3.xcdatamodel; sourceTree = "<group>"; };
 		48576270297920710061157D /* MyBookingV5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBookingV5.xcdatamodel; sourceTree = "<group>"; };
+		48C13C4E297A373500C040A7 /* MyBooking-V2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MyBooking-V2.sqlite"; path = "CoreDataXCoreStoreTests/MyBooking-V2.sqlite"; sourceTree = SOURCE_ROOT; };
+		48C13C53297A38D200C040A7 /* MyBooking-V4.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyBooking-V4.sqlite"; sourceTree = "<group>"; };
 		48ECFAE22977D23C00075EAB /* NSDictionary+SafeObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeObject.h"; sourceTree = "<group>"; };
 		48ECFAE32977D23C00075EAB /* NSDictionary+SafeObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeObject.m"; sourceTree = "<group>"; };
 		48F4927029767D5A00B9E486 /* CoreDataXCoreStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataXCoreStore-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -55,6 +72,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		483108272979480000075CC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48FFBBFF29753E9B00936A95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4831082B2979480000075CC2 /* CoreDataXCoreStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				48C13C53297A38D200C040A7 /* MyBooking-V4.sqlite */,
+				48C13C4E297A373500C040A7 /* MyBooking-V2.sqlite */,
+				4831082C2979480000075CC2 /* SchemaMigrationTests.swift */,
+			);
+			path = CoreDataXCoreStoreTests;
+			sourceTree = "<group>";
+		};
 		4837761A29753F830019C090 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				48FFBC0429753E9B00936A95 /* CoreDataXCoreStore */,
+				4831082B2979480000075CC2 /* CoreDataXCoreStoreTests */,
 				48FFBC0329753E9B00936A95 /* Products */,
 				9129938A7993A8D15379EC41 /* Pods */,
 				FE3EAC9EF180372EF1091A99 /* Frameworks */,
@@ -121,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				48FFBC0229753E9B00936A95 /* CoreDataXCoreStore.app */,
+				4831082A2979480000075CC2 /* CoreDataXCoreStoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +198,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		483108292979480000075CC2 /* CoreDataXCoreStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 483108322979480000075CC2 /* Build configuration list for PBXNativeTarget "CoreDataXCoreStoreTests" */;
+			buildPhases = (
+				483108262979480000075CC2 /* Sources */,
+				483108272979480000075CC2 /* Frameworks */,
+				483108282979480000075CC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4831082F2979480000075CC2 /* PBXTargetDependency */,
+			);
+			name = CoreDataXCoreStoreTests;
+			productName = CoreDataXCoreStoreTests;
+			productReference = 4831082A2979480000075CC2 /* CoreDataXCoreStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		48FFBC0129753E9B00936A95 /* CoreDataXCoreStore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48FFBC1629753E9C00936A95 /* Build configuration list for PBXNativeTarget "CoreDataXCoreStore" */;
@@ -191,6 +245,10 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					483108292979480000075CC2 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 48FFBC0129753E9B00936A95;
+					};
 					48FFBC0129753E9B00936A95 = {
 						CreatedOnToolsVersion = 14.0.1;
 						LastSwiftMigration = 1400;
@@ -211,11 +269,21 @@
 			projectRoot = "";
 			targets = (
 				48FFBC0129753E9B00936A95 /* CoreDataXCoreStore */,
+				483108292979480000075CC2 /* CoreDataXCoreStoreTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		483108282979480000075CC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C13C4F297A373500C040A7 /* MyBooking-V2.sqlite in Resources */,
+				48C13C54297A3DA100C040A7 /* MyBooking-V4.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48FFBC0029753E9B00936A95 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,6 +339,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		483108262979480000075CC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4831082D2979480000075CC2 /* SchemaMigrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48FFBBFE29753E9B00936A95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +366,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4831082F2979480000075CC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48FFBC0129753E9B00936A95 /* CoreDataXCoreStore */;
+			targetProxy = 4831082E2979480000075CC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		48FFBC0B29753E9B00936A95 /* Main.storyboard */ = {
@@ -311,6 +395,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		483108302979480000075CC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RD7TLJ6X49;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dwirandyh.CoreDataXCoreStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataXCoreStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoreDataXCoreStore";
+			};
+			name = Debug;
+		};
+		483108312979480000075CC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RD7TLJ6X49;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dwirandyh.CoreDataXCoreStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataXCoreStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoreDataXCoreStore";
+			};
+			name = Release;
+		};
 		48FFBC1429753E9C00936A95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -491,6 +613,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		483108322979480000075CC2 /* Build configuration list for PBXNativeTarget "CoreDataXCoreStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				483108302979480000075CC2 /* Debug */,
+				483108312979480000075CC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		48FFBBFD29753E9B00936A95 /* Build configuration list for PBXProject "CoreDataXCoreStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
